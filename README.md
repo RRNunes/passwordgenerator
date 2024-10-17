@@ -11,10 +11,10 @@ Este projeto é uma aplicação full-stack de gerador de senhas, utilizando Java
 
 ## Requisitos
 
-- Java 11+
+- Java 17
 - Maven
 - Node.js e NPM
-- Angular CLI
+- Angular 
 
 ## Diagrama UML do Sistema
 O diagrama UML será simples, com a classe principal do gerador de senha e as interfaces entre o frontend e o backend.
