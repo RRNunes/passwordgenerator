@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PasswordgeneratorApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(PasswordgeneratorApplication.class, args);
 	}
 
