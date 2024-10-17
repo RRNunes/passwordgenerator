@@ -11,7 +11,7 @@ Este projeto é uma aplicação full-stack de gerador de senhas, utilizando Java
 
 ## Requisitos
 
-- Java 17
+- Java 
 - Maven
 - Node.js e NPM
 - Angular 
