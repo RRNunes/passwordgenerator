@@ -42,21 +42,3 @@ O diagrama UML será simples, com a classe principal do gerador de senha e as in
 +-------------------------------------+
 
 ````
-2. Diagrama de Componentes
-
-```
-+----------------------------------------------------+
-| Angular Frontend                                   |
-+----------------------------------------------------+
-| - Tela: Formulário com parâmetros da senha         |
-| - Botão: Gerar Senha                               |
-+----------------------------------------------------+
-
-+----------------------------------------------------+
-| Backend (Java - Spring Boot)                       |
-+----------------------------------------------------+
-| - Endpoint: /generate-password                     |
-| - Método: POST                                     |
-| - Parâmetros: length, useUpperCase, useNumbers,    |
-|   useSpecialChars                                  |
-+----------------------------------------------------+
