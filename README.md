@@ -1,4 +1,4 @@
-# Gerador de Senha - Projetinho pessoal para fins de estudos.
+# Gerador de Senha - Projetinho pessoal para fins de estudos
 
 Gerador de Senhas em Java com Interface Angular.
 
