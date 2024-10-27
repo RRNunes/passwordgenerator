@@ -2,6 +2,7 @@
 
 Gerador de Senhas em Java com Interface Angular.
 
+Status: Em progresso...
 #### Descrição do Projeto
 
 O projeto é um gerador de senhas seguras utilizando Java como backend e Angular para a interface de usuário. O gerador permite ao usuário definir parâmetros como comprimento da senha e tipos de caracteres (letras, números, caracteres especiais).
