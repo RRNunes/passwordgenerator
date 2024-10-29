@@ -6,7 +6,7 @@ document.getElementById("password-form").addEventListener("submit", async functi
     const useUpperCase = document.getElementById("useUpperCase").checked;
     const useSpecialChars = document.getElementById("useSpecialChars").checked;
 
-    // Monta a requisição com os dados do formulário
+    // monta a requisição com os dados do formulario
     const requestData = {
         length: parseInt(length),
         useNumbers: useNumbers,
@@ -27,10 +27,10 @@ document.getElementById("password-form").addEventListener("submit", async functi
             throw new Error("Erro na resposta do servidor");
         }
 
-        const password = await response.text(); // Captura a resposta em texto
+        const password = await response.text(); // captura a resposta em texto
         console.log("Response Status:", response.status);
 
-        // Exibe a senha no elemento com id 'password-result'
+        // exibe a senha no elemento com id 'password-result'
         document.getElementById("password-result").textContent = password;
     } catch (error) {
         console.error("Erro ao gerar senha:", error);

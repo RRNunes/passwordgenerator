@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/password/generate")
-                .allowedOrigins("http://localhost:8080") // Permite qualquer origem
+                .allowedOrigins("http://localhost:8080")
                 .allowedMethods("POST");
     }
 }

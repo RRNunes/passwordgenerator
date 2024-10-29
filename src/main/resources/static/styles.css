@@ -1,4 +1,4 @@
-/* Fundo da página com gradiente */
+/* fundo da pagina com gradiente */
 body {
     background: linear-gradient(to right, #4a90e2, #50c9c3);
     font-family: 'Roboto', sans-serif;
@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* Contêiner principal */
+/* contêiner principal */
 .container {
     background-color: #ffffffcc; /* Fundo levemente translúcido */
     padding: 25px;
@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-/* Título */
+/* título */
 h2 {
     color: #333;
     font-family: 'Roboto', sans-serif;
@@ -29,7 +29,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Labels e entradas do formulário */
+/* labels e entradas do formulário */
 label {
     display: block;
     margin: 10px 0 5px;
@@ -38,7 +38,7 @@ label {
     font-size: 14px;
 }
 
-/* Container para checkbox e rótulos */
+/* container para checkbox e rótulos */
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -48,10 +48,10 @@ label {
 
 .checkbox-group input[type="checkbox"] {
     margin-right: 10px;
-    transform: scale(1.2); /* Aumenta o tamanho do checkbox */
+    transform: scale(1.2); /* aumenta o tamanho do checkbox */
 }
 
-/* Campo de número */
+/* campo de número */
 input[type="number"] {
     padding: 10px;
     width: 100%;
@@ -62,7 +62,7 @@ input[type="number"] {
     margin-bottom: 15px;
 }
 
-/* Estilização do botão */
+/* estilização do botao */
 button {
     background-color: #4a90e2;
     color: #fff;
@@ -82,7 +82,7 @@ button:hover {
     background-color: #357ab7;
 }
 
-/* Caixa de exibição da senha */
+/* caixa de exibição da senha */
 .password-display {
     background-color: #f7f7f7;
     padding: 15px;
@@ -95,7 +95,7 @@ button:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo da senha gerada */
+/* estilo da senha gerada */
 #password-result {
     color: #4a90e2;
     font-family: 'Roboto Mono', monospace;
@@ -103,5 +103,5 @@ button:hover {
     font-weight: bold;
 }
 
-/* Importando a fonte */
+/* importando a fonte */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
