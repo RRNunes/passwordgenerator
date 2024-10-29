@@ -9,22 +9,32 @@
 </head>
 <body>
     <div class="container">
-        <h2>Password Generator</h2>
+        <h2>Gerador de Senhas</h2>
         <form id="password-form">
-            <label for="length"> Password length:</label>
-            <input type="number" id="length" name="length" required>
-            <label for="uppercase">Include Uppercase Latters:</label>
-            <input type="checkbox" id="uppercase" name="uppercase">
-            <label for="numbers">Include Numbers:</label>
-            <input type="checkbox" id="numbers" name="Numbers">
-            <label for="special">Include Special Characters:</label>
-            <input type="checkbox" id="special" name="special">
-            <BUtton type="submit">Generate Password</BUtton>
+            <label for="length">Comprimento da senha:</label>
+            <input type="number" id="length" name="length" min="4" placeholder="Mínimo 4 caracteres" required>
+    
+            <div class="checkbox-group">
+                <input type="checkbox" id="useNumbers" name="useNumbers">
+                <label for="useNumbers">Incluir Números</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="useUpperCase" name="useUpperCase">
+                <label for="useUpperCase">Incluir Letras Maiúsculas</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="useSpecialChars" name="useSpecialChars">
+                <label for="useSpecialChars">Incluir Caracteres Especiais</label>
+            </div>
+    
+            <button type="submit">Gerar Senha</button>
         </form>
-        <div class="password-display">
-            <p id="generated-password">Generated Password: <span id="password-result"></span></p>
-        </div>
+    
+        <div class="password-display" id="password-result">Sua senha aparecerá aqui</div>
     </div>
+    
     <script src="app.js"></script>
 
 </body>

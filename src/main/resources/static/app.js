@@ -1,27 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('password-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // evitar o recarregamento da página
-        const length = document.getElementById('length').value;
-        const useUpperCase = document.getElementById('uppercase').checked;
-        const useNumbers = document.getElementById('numbers').checked;
-        const useSpecialChars = document.getElementById('special').checked;
-        const params = new URLSearchParams({
-            length: length,
-            useUpperCase: useUpperCase,
-            useNumbers: useNumbers,
-            useSpecialChars: useSpecialChars
+document.getElementById("password-form").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const length = document.getElementById("length").value;
+    const useNumbers = document.getElementById("useNumbers").checked;
+    const useUpperCase = document.getElementById("useUpperCase").checked;
+    const useSpecialChars = document.getElementById("useSpecialChars").checked;
+
+    // Monta a requisição com os dados do formulário
+    const requestData = {
+        length: parseInt(length),
+        useNumbers: useNumbers,
+        useUpperCase: useUpperCase,
+        useSpecialChars: useSpecialChars
+    };
+
+    try {
+        const response = await fetch("http://localhost:8080/api/password/generate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(requestData)
         });
-        fetch(`http://localhost:8080/api/password/generate?${params.toString()}`, {
-            method: 'POST'
-        })
-        .then(response => response.text())
-        .then(password => {
-            console.log("Generated Password:", password); // verificar a resposta
-            // exibir a senha gerada
-            document.getElementById('password-result').innerText = password;
-        })
-        .catch(error => {
-            console.error('Error generating password:', error);
-        });
-    });
+
+        if (!response.ok) {
+            throw new Error("Erro na resposta do servidor");
+        }
+
+        const password = await response.text(); // Captura a resposta em texto
+        console.log("Response Status:", response.status);
+
+        // Exibe a senha no elemento com id 'password-result'
+        document.getElementById("password-result").textContent = password;
+    } catch (error) {
+        console.error("Erro ao gerar senha:", error);
+        document.getElementById("password-result").textContent = "Erro ao gerar senha. Tente novamente.";
+    }
 });

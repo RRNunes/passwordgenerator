@@ -1,6 +1,7 @@
+/* Fundo da página com gradiente */
 body {
     background: linear-gradient(to right, #4a90e2, #50c9c3);
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     display: flex;
     justify-content: center;
@@ -8,55 +9,99 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+/* Contêiner principal */
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffffcc; /* Fundo levemente translúcido */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
 }
+
+/* Título */
 h2 {
     color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
+
+/* Labels e entradas do formulário */
 label {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
     color: #555;
+    font-size: 14px;
 }
-input[type="number"], input[type="checkbox"] {
-    margin-bottom: 10px;
-    padding: 5px;
+
+/* Container para checkbox e rótulos */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Aumenta o tamanho do checkbox */
+}
+
+/* Campo de número */
+input[type="number"] {
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
+
+/* Estilização do botão */
 button {
     background-color: #4a90e2;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
-    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 }
+
 button:hover {
-    background-color: #3d7bb5;
+    background-color: #357ab7;
 }
+
+/* Caixa de exibição da senha */
 .password-display {
     background-color: #f7f7f7;
     padding: 15px;
     border-radius: 4px;
     margin-top: 20px;
     border: 1px solid #ddd;
-}
-#generated-password {
+    font-size: 18px;
     font-weight: bold;
     color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilo da senha gerada */
 #password-result {
     color: #4a90e2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
 }
+
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
