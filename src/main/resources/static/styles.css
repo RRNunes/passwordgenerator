@@ -1,6 +1,6 @@
 /* fundo da pagina com gradiente */
 body {
-    background: linear-gradient(to right, #4a90e2, #50c9c3);
+    background: linear-gradient(to right, #0c4983, #4ad0ca);
     font-family: 'Roboto', sans-serif;
     color: #333;
     display: flex;
@@ -64,7 +64,7 @@ input[type="number"] {
 
 /* estilização do botao */
 button {
-    background-color: #4a90e2;
+    background-color: #ec8e0a;
     color: #fff;
     border: none;
     padding: 12px;
@@ -79,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: #357ab7;
+    background-color: #eda955;
 }
 
 /* caixa de exibição da senha */
@@ -97,7 +97,7 @@ button:hover {
 
 /* estilo da senha gerada */
 #password-result {
-    color: #4a90e2;
+    color: #e5790e;
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     font-weight: bold;
