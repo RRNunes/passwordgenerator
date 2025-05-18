@@ -16,3 +16,4 @@ Este projeto é uma aplicação full-stack de gerador de senhas, utilizando Java
 - JavaScript 
 
 
+![Texto Alternativo](10geradordesenha.jpg)
